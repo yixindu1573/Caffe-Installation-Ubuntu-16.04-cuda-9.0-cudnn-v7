@@ -6,7 +6,7 @@ Installing Caffe on a fresh-installed ubuntu 16.04, with cuda 9.0 and cudnn v7.
       
       sudo add-apt-repository ppa:graphics-drivers/ppa
       sudo apt-get update  
-      sudo apt-get install nvidia-384 (check the number on NVIDIA website, and change it to fit your GPU)  
+      sudo apt-get install nvidia-384 (check the gpu drive number on NVIDIA website, and change it to fit your GPU. E.x., 384 is for Titan X)  
       sudo shutdown -r now  
 
 
