@@ -68,7 +68,41 @@ create symbolic link for hdf5:
 
       git clone https://github.com/BVLC/caffe
       
-copy the attached 
+download and copy the attached Makefile.config into caffe folder
+
+
+**7. Build Caffe.**\
+open a terminal in caffe folder
+
+      make all -j $(($(nproc) + 1))
+      make test -j $(($(nproc) + 1))
+      make runtest -j $(($(nproc) + 1))
+      pip install protobuf
+      make pycaffe -j $(($(nproc) + 1))
+      echo "export CAFFE_ROOT=$(pwd)" >> ~/.bashrc
+      echo 'export PYTHONPATH=$CAFFE_ROOT/python:$PYTHONPATH' >> ~/.bashrc
+      conda install libgcc
+
+**8. Test the Caffe installation.**\
+open a new terminal
+
+      python
+      import caffe
+      
+Cheers!\
+\
+Feel free to contact me at (yixindu1573@gmail.com) for any questions.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
