@@ -65,6 +65,7 @@ create symbolic link for hdf5:
       sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 
 **6. Download Caffe.**
+open a new terminal,
 
       git clone https://github.com/BVLC/caffe
       
