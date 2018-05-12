@@ -51,7 +51,8 @@ check cuda installation, open a new terminal:
 Log out and log in again to activate the new variables (close and open the terminal).
 
 
-**5. Install other dependencies.**\
+**5. Install other dependencies.**
+
       sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
       sudo apt-get install --no-install-recommends libboost-all-dev
       sudo apt-get install libopenblas-dev
