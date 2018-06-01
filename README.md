@@ -90,6 +90,12 @@ open a new terminal
       python
       import caffe
       
+**9. Matcaffe.**\
+http://www.cs.jhu.edu/~cxliu/2016/compiling-matcaffe-on-ubuntu-1604.html
+      make matcaffe
+      export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+      export LD_PRELOAD=$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libstdc++.so.6:/usr/lib/x86_64-linux-gnu/libprotobuf.so.9
+      
 Cheers!\
 \
 Feel free to contact me at (yixindu1573@gmail.com) for any questions.
