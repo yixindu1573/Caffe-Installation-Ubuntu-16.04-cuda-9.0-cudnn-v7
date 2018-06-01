@@ -33,8 +33,8 @@ check cuda installation, open a new terminal:
       bin/x86_64/linux/release/deviceQuery
       bin/x86_64/linux/release/bandwidthTest
 
-**3. Install CUDNN v7.**\
-      Download cudnn v7 from (https://developer.nvidia.com/cudnn)
+**3. Install CUDNN v6.**\
+      Download cudnn v6 from (https://developer.nvidia.com/cudnn)
             
       cd ~/Downloads/
       tar xvf cudnn*.tgz
