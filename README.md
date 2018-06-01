@@ -1,12 +1,12 @@
-# Caffe-Installation-Ubuntu-16.04-cuda-9.0-cudnn-v7
+# Caffe-Installation-Ubuntu-16.04-cuda-8.0-cudnn-v6
 
-Installing Caffe on a fresh-installed ubuntu 16.04 (please fully update ubuntu software first), with cuda 9.0 and cudnn v7.
+Installing Caffe on a fresh-installed ubuntu 16.04 (please fully update ubuntu software first), with cuda 8.0 and cudnn v6.
 
 **1. Install NVIDIA driver.**
       
       sudo add-apt-repository ppa:graphics-drivers/ppa
       sudo apt-get update  
-      sudo apt-get install nvidia-384 (check the gpu drive number on NVIDIA website, and change it to fit your GPU. E.x., 384 is for Titan X)  
+      sudo apt-get install nvidia-390 (check the gpu drive number on NVIDIA website, and change it to fit your GPU. E.x., 390 is for Titan X)  
       sudo shutdown -r now  
 
 
@@ -14,7 +14,7 @@ Installing Caffe on a fresh-installed ubuntu 16.04 (please fully update ubuntu s
             Download cuda 9.0 from (https://developer.nvidia.com/cuda-90-download-archive)
             
       cd ~/Downloads
-      sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+      sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb 
       sudo apt-get update
       sudo apt-get install cuda
       echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
@@ -22,7 +22,7 @@ Installing Caffe on a fresh-installed ubuntu 16.04 (please fully update ubuntu s
 
 compile cuda samples, open a new terminal:
 
-      cuda-install-samples-9.0.sh ~/cuda-samples
+      cuda-install-samples-8.0.sh ~/cuda-samples
       cd ~/cuda-samples/NVIDIA*Samples
       make -j $(($(nproc) + 1))
       sudo shutdown -r now
