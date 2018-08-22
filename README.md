@@ -110,7 +110,7 @@ Download the latest MatConvnet
 
       sudo apt-get install python-pip python-dev
       sudo pip install -U pip
-      pip install -U tensorflow-gpu==1.4.0
+      pip install -U tensorflow-gpu==1.4.0 --user
       python -c "import tensorflow as tf; print(tf.__version__)"
       
 **12. Tensorflow (Sources).**\
