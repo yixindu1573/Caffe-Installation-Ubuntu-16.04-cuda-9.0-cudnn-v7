@@ -106,7 +106,9 @@ Download the latest MatConvnet
       vl_compilenn('enableGpu', true, ...
                'enableCudnn', true) ;
 
-**11. Tensorflow (Binary).**\               
+**11. Tensorflow (Binary).**\        
+Install tensorflow via pip:
+
       sudo apt-get install python-pip python-dev
       sudo pip install -U pip
       pip install -U tensorflow-gpu==1.4.0 --user
