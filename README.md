@@ -11,7 +11,8 @@ Installing Caffe on a fresh-installed ubuntu 16.04 (please fully update ubuntu s
 
 
 **2. Install CUDA 9.0.**\
-            Download cuda 9.0 from (https://developer.nvidia.com/cuda-90-download-archive)
+            Download cuda 9.0 from (https://developer.nvidia.com/cuda-90-download-archive) 
+            Install 9.0 for Tensorflow, 8.0 for matconvnet.
             
       cd ~/Downloads
       sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb 
@@ -35,6 +36,7 @@ check cuda installation, open a new terminal:
 
 **3. Install CUDNN v6.**\
       Download cudnn v6 from (https://developer.nvidia.com/cudnn)
+      Install v6 for Tensorflow, 5.1 for matconvnet.
             
       cd ~/Downloads/
       tar xvf cudnn*.tgz
