@@ -43,6 +43,20 @@ check cuda installation, open a new terminal:
       cd cuda
       sudo cp */*.h /usr/local/cuda/include/
       sudo cp */*.so* /usr/local/cuda/lib64/
+      
+      Remove old Cudnn and upgrade to new ones:
+      download cudnn6.0 version (not latest 7.0)
+      
+      sudo rm -rf /usr/local/cuda/include/cudnn.h
+      sudo rm -rf /usr/local/cuda/lib64/libcudnn*
+      to cudnn untar folders
+      sudo cp include/cudnn.h /usr/local/cuda/include/
+      sudo cp lib64/lib* /usr/local/cuda/lib64/
+      cd /usr/local/cuda/lib64/
+      sudo chmod +r libcudnn.so.6.0.21
+      sudo ln -sf libcudnn.so.6.0.21 libcudnn.so.6
+      sudo ln -sf libcudnn.so.6 libcudnn.so
+      sudo ldconfig
 
 **4. Install Anaconda.**\
       Download Anaconda from (https://www.anaconda.com/download/#linux)
