@@ -131,12 +131,47 @@ Install tensorflow via pip:
       python -c "import tensorflow as tf; print(tf.__version__)"
       
 **12. Tensorflow (Sources).**\
+
       Install bazel: sudo bash ./bazel....sh
       Install NCCL: tar xvf nccl-<version>.txz (https://docs.nvidia.com/deeplearning/sdk/nccl-install-guide/index.html)
       Download tensorflow: git clone https://github.com/tensorflow/tensorflow 
       cd tensorflow
       ./configure
+      
+**13. Eclipse C++.**\
 
+      sudo apt install -y eclipse-cdt-*
+      URL=https://www.eclipse.org/downloads/download.php
+      ECLIPSE=/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz
+      MIRROR=1
+      
+      wget -q -O eclipse-inst-linux64.tar.gz \
+      "${URL}?file=${ECLIPSE}&mirror_id=${MIRROR}"
+      
+      tar zxf eclipse-inst-linux64.tar.gz
+      ./eclipse-installer/eclipse-inst
+      
+      Open a text editor
+      Copy and paste the following text into the editor: 
+      
+      [Desktop Entry]
+      Version=1.0
+      Name=Eclipse
+      Comment=Java IDE
+      Type=Application
+      Categories=Development;IDE;
+      Exec=/home/{username}/Programs/eclipse/eclipse
+      Terminal=false
+      StartupNotify=true
+      Icon=/home/{username}/Programs/eclipse/icon.xpm
+      Name[en_US]=Eclipse
+      
+      Update any paths if you extracted Eclipse to a different location
+      Save the file as eclipse.desktop in /home/{username}/.local/share/applications/
+      
+      Reboot your machine
+      Search for Eclipse
+      Drag and drop the Eclipse icon to the launcher 
       
 Cheers!\
 \
