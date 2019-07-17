@@ -154,17 +154,17 @@ Install tensorflow via pip:
       Open a text editor
       Copy and paste the following text into the editor: 
       
-      [Desktop Entry]
-      Version=1.0
-      Name=Eclipse
-      Comment=Java IDE
-      Type=Application
-      Categories=Development;IDE;
-      Exec=/home/{username}/Programs/eclipse/eclipse
-      Terminal=false
-      StartupNotify=true
-      Icon=/home/{username}/Programs/eclipse/icon.xpm
-      Name[en_US]=Eclipse
+       [Desktop Entry]
+        Version=1.0
+        Name=Eclipse
+        Comment=Java IDE
+        Type=Application
+        Categories=Development;IDE;
+        Exec=/home/yixin/eclipse/cpp-oxygen/eclipse/eclipse
+        Terminal=false
+        StartupNotify=true
+        Icon=/home/yixin/eclipse/cpp-oxygen/eclipse/icon.xpm
+        Name[en_US]=Eclipse
       
       Update any paths if you extracted Eclipse to a different location
       Save the file as eclipse.desktop in /home/{username}/.local/share/applications/
